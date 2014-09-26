@@ -7,5 +7,11 @@ In addition to creating membership-status-based access criteria, the user can co
 
 See also: http://wiki.civicrm.org/confluence/display/CRMDOC/Joomla+CiviCRM+Membership+Authentication+and+ACL+Plugin
 
+
+Adding/Removing additional Membership Status or Membership Type Levels :
+-----------------------------------------------------------------------
+
+By default the plugin is hard coded for 18 Membership Status Levels and 10 Membership Type Levels. You can add additional levels by modifying the following files:
+
 Note:
 This plugin uses only few user groups in joomla (as I was having this recruitment). if you want to add all the usergroups to be assigned, you can just make the changes in our  usergroup.php file(this is the copy of joomla core file I've changed according to my requirement).

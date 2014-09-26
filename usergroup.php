@@ -50,10 +50,7 @@ class JFormFieldUsergroup extends JFormField
 
 		// Initialize JavaScript field attributes.
 		$attr .= $this->element['onchange'] ? ' onchange="' . (string) $this->element['onchange'] . '"' : '';
- // echo '<br/> attribs    ::::'; print_r(access.usergroup); print_r(JHtml::_('access.usergroup'));die('xxxxx');
-  // echo '<br/> this    <pre>::::'; print_r(jimport( 'joomla.html.html.access' ));
-  // echo '<br/> this    <pre>::::'; print_r($this->value);
-  // die('sssss');
+
 		// Iterate through the children and build an array of options.
 		foreach ($this->element->children() as $option)
 		{
@@ -131,8 +128,7 @@ class JFormFieldUsergroup extends JFormField
 					if($groups[$i]->id == 1 ||$groups[$i]->id == 2 || $groups[$i]->parent_id == 2 || $groups[$i]->parent_id == 3 || $groups[$i]->parent_id == 4){
 					
 						$groups[$i]->text = str_repeat('- ', $groups[$i]->level) . $groups[$i]->title;
-						// echo 'yes::::';echo $groups[$i]->text;
-						// echo '<br/> groupss .iiiiiiiii    <pre>::::'; print_r($groups[$i]->text);
+						
 						
 						echo '<option value="'.$groups[$i]->id.'"';
 						// if(in_array($this->value, $users_groups_array)){
@@ -147,20 +143,6 @@ class JFormFieldUsergroup extends JFormField
 			
   
 				//joomla style dropdown ends here
-  // die;
-      
- 
-     
-		
-		//#############STARTS HERE##############
-		
-		
-		// return JHtml::_('access.usergroup', $this->name, $this->value, $attr, $options, $this->id);
-		// echo '<br/> $this->name    ::::'; print_r($this->name );
-		// echo '<br/> $this->value   ::::'; print_r($this->value);
-		// echo $temp++;
-		// echo '<br/> options   ::::'; print_r($options);
-		// echo '<br/> attribs    ::::'; print_r($attr );
 	}
 
 }

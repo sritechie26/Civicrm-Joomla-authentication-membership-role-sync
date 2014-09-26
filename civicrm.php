@@ -208,7 +208,7 @@ class plgAuthenticationCiviCRM extends JPlugin
     // By default we have enabled 8 levels of membership STATUS. If you have more
     // than 8 then you need to modify the section below.
     if ( $this->params->get('advanced_features_status') ) {
-      for ( $i = 1; $i <= 8; $i++ ) {
+      for ( $i = 1; $i <= 18; $i++ ) {
         $groups[] = $this->params->get( 'user_group_'.$i );
       }
     }
@@ -217,7 +217,7 @@ class plgAuthenticationCiviCRM extends JPlugin
     // By default we have enabled 8 levels of membership TYPE. If you have more
     // than 8 then you need to modify the section below.
     if ( $this->params->get('advanced_features_type') ) {
-      for ( $i = 1; $i <= 8; $i++ ) {
+      for ( $i = 1; $i <= 10; $i++ ) {
         $groups[] = $this->params->get( 'TACL_user_group_'.$i );
       }
     }
