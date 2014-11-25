@@ -8,7 +8,7 @@
  *
  * @author      Henry Bennett <henry@bec-cave.org.uk>
  *              Brian Shaughnessy <brian@lcdservices.biz>
- *				Sri Jella <sritechie26@gmail.com>
+ *			    Sri Jella <sritechie26@gmail.com>
  * @version     2.1.0
  * @package     Joomla
  * @subpackage  JFramework
@@ -78,7 +78,7 @@ class plgAuthenticationCiviCRM extends JPlugin
     $query->select('id, password');
     $query->from('#__users');
 
-    //CiviCRM: accommodate username OR email
+    //CiviCRM: accommodate username OR email.
     if ( $this->params->get('username_email') ) {
       $query->where('username='.$db->quote($credentials['username']).' OR email='.$db->quote($credentials['username']));
     }
